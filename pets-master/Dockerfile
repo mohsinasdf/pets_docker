@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
   libssl-dev \
   libffi-dev
 
+RUN pip install --upgrade pip setuptools wheel
 RUN pip install petlib pytest
 
 VOLUME ["/src"]
